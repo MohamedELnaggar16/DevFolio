@@ -1,0 +1,279 @@
+ /* common classes -------------------------------- */
+ .blueline{
+    border-bottom: solid 3px #0078ff;;
+    width:100px; 
+}
+.shortblueline{
+    border-bottom: solid 5px #0078ff;;
+    width:50px;
+    margin:25px auto;   
+}
+.centerp{
+    color: #6c757d;
+}
+/* nave bar---------------------------------- */
+.editnav{
+    background-color: rgba(0, 0, 0,0.9)  !important;
+    z-index: 999;
+}
+.btnedit{
+    border-radius: 10px;
+    background-color: white;
+    border-color: black;
+}
+/*  page one ----------------------------------  */
+#pageone{
+    background-image: url(images/hero-bg.jpg);
+    background-size: cover;  
+    background-position: center center;
+    background-attachment: fixed;
+}
+.layerpageone{
+    flex-direction: column;
+    background-color: rgba(0, 0, 0,0.6);
+}
+.layerpageone h1{
+    font-size: 70px;
+}
+.write h3::after{
+    content: "Designer";
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 10s infinite ,blink 1s step-end infinite;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid rgb(252, 252, 252);  
+}
+@keyframes typing {
+    0% {   
+      width: 0%;
+      content: "Developer";
+    }
+    15% { 
+      width: 100%;
+      content: "Developer";     
+    }
+    25%{
+        width: 0%;
+        content: "Developer";
+    }
+    35% { 
+        width: 100%;
+        content: "Designer";
+      }
+      45%{
+          width: 0%;
+          content: "Designer";
+      }
+      55% { 
+        width: 100%;
+        content: "Freelance";
+      }
+      65%{
+          width: 0%;
+          content: "Freelance";
+      }
+      75% { 
+        width: 100%;
+        content: "Photographer";
+      }
+      100%{
+          width: 0%;
+          content: "Photographer";
+      }
+}
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: rgb(255, 255, 255); 
+    }
+}
+/*  page two -------------------------------- */
+#pagetwo{
+    background-color: #f5f5f5;
+    padding-top: 50px;
+}
+.editimg2{
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.right p{
+    color:  #6c757d;
+}
+.editcard{
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%); 
+}
+/* page three -------------------------------------------------------- */
+#pagethree{
+    background-color: #f5f5f5; 
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.editdiv3{   
+    border-radius: 15px;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%)
+}
+.editdiv3 h4{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin:auto;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 0.5s;
+}
+.editdiv3 h4 i{
+    padding-top: 30px;
+    transition: all 0.5s;
+}
+.editdiv3 h4:hover i{
+    color: white;
+}
+.editdiv3 h4:hover {
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px rgba(0, 120, 255,0.25);
+}
+/* page four -------------------------------- */
+#pagefour{
+    background-image: url(images/post-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parentdiv4{
+background-color: rgba(0, 120, 255,0.75);
+color: white;
+height: 100%;
+width: 100%;
+}
+.parentdiv4 div p{
+    margin: 5px 0px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.parentdiv4 h4 i{
+    padding-top: 10px;
+    height: 45px;
+    width: 45px;
+    font-size: 25px;
+    border-radius: 50%;
+    margin:auto;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255,0.75);
+}
+/*  page five ----------------------------------------- */
+#pagefive{
+    padding-top: 50px;
+}
+.childdiv5{
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%), 0 2px 5px 0 rgb(0 0 0 / 25%);
+}
+#pagefive h6{
+    color: #0078ff;
+}
+.child2 i{
+    color: #0078ff;
+    border: #0078ff 2px solid;
+    border-radius: 50%;
+    padding: 4px;
+}
+.child2 i:hover{
+    cursor: pointer;
+}
+.img-fluid{
+    transition: all 1s;
+}
+.img-fluid:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+.hidden{
+    overflow: hidden;
+}
+
+/*  page seven ------------------------------------ */
+#pageseven{
+    padding-top: 50px;   
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.rounded-circle{
+    width: 35px;
+    height: 35px;
+}
+
+.card-title{
+    color: black;
+    transition: all 0.5s;
+}
+.card-title:hover{
+    cursor: pointer;
+    color: #0078ff;
+}
+.editname{
+    transition: all 0.5s;
+    padding-left: 5px;
+}
+.editname:hover{
+    color: #0078ff;
+    cursor: pointer;
+}
+/* page eight  */
+#pageeight{
+    background-image: url(images/overlay-bg.jpg);
+    background-size:cover; 
+}
+.layer8{
+    background-color: rgba(0, 120, 255,0.75);
+    /* width: 100%; */
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%), 0 2px 5px 0 rgb(0 0 0 / 25%);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;   
+    
+}
+.editcontainer8{
+    width: 90%;
+    height: 85%;
+    padding: 25px;
+}
+.social i{
+    margin-top: 5px;
+    font-size: 20px;
+    border: #0078ff 3px solid;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.social i:hover{
+background-color: #0078ff;
+color: white;
+box-shadow: 0 0 0 3px rgba(0, 120, 255,0.25);
+cursor: pointer;
+}
+.btnedit2{
+    margin-top: 5px;
+    background: #0078ff;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: all 0.5s;
+    border-radius: 20px;   
+}
+.btnedit2:hover{
+    box-shadow: 0 0 0 4px rgba(0, 120, 255,0.25)
+}
+/*  footer / inside page eight */
+#pagenine{
+    background-color: #0062d3;
+    width: 100%;
+}
+
